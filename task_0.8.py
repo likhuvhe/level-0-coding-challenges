@@ -19,4 +19,5 @@ def hour_minute(number):
         else:
             minutes = number
             break
-    print(plural_singular(hour, minutes))
+    
+    return plural_singular(hour, minutes)
