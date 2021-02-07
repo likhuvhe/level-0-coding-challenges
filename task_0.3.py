@@ -1,2 +1,3 @@
 def hello(name):
-    print(f"Hello {name}!")
+    if str(name) == name:
+        print(f"Hello {name}!")
