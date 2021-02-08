@@ -11,13 +11,13 @@ def plural_singular(hour, minutes):
 def hour_minute(number):
     hour = 0
     minutes = 0
-
-    while number:
+    
+    while isinstance(number, int):
         if number >= 60:
             number -= 60
             hour += 1
         else:
             minutes = number
             break
-    
+        
     return plural_singular(hour, minutes)
